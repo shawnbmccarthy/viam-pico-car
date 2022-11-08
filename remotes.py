@@ -120,7 +120,7 @@ if __name__ == '__main__':
     try:
         websocket.enableTrace(False)
         ws_client = websocket.WebSocket()
-        ws_client.connect('ws://10.0.0.53:8765')
+        ws_client.connect('ws://PICO_IP_HERE:8765')
         print(ws_client.recv())
         asyncio.run(main(ws_client))
     except Exception as e:
